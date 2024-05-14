@@ -1,0 +1,41 @@
+
+.container-background{
+    background-image: url(../img/header-bg.png);
+    background-size: contain;
+    background-position: top center;
+    background-repeat: no-repeat;
+    
+}
+.main-header{
+    padding: 2rem 2rem;
+    display: flex;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 0 auto;
+    flex-wrap: wrap;
+    align-items: center;
+}
+.main-menu{
+    display: flex;
+    flex-wrap: wrap;
+}
+.main-menu li a{
+    display: block;
+    padding: 20px 25px;
+    font-family: poppins;
+    font-weight: 500;
+    
+    color: var(--text-dark);
+}
+.main-menu li a:hover{
+    color: var(--primary-color);
+    transition: all .3s;
+}
+.logo{
+    font-family: poppins;
+    font-size: 2rem;
+    font-weight: 400;
+}
+.logo span{
+    color: var(--primary-color);
+}
