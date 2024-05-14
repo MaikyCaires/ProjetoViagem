@@ -96,6 +96,9 @@
     .intro-main{
       grid-template-columns: 1fr;
       text-align: center;
+      justify-content: center;
+      justify-items: center;
+      align-items: center;
       margin: 0 auto;
       padding: 1rem 1.5rem;
     }
