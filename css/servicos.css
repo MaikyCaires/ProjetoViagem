@@ -32,15 +32,16 @@
 }
 .card{
     text-align: center;
-    padding: 40px;
+    padding: 40px;  
     border-radius: 30px;
     flex: 1 1 0;
    
 }
-.card:hover{
+.card:hover, .ativoService {
     box-shadow:  5px 5px 15px 0px rgba(44, 44, 44, 0.30);
     transition: all .4s;
 }
+
 .card img{
     width: 70px;
     padding-bottom: 30px;
@@ -86,4 +87,5 @@
     .text-item p{
         font-size: 1.2rem;
     }
+
 }
