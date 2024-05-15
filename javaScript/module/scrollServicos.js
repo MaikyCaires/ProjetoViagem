@@ -5,7 +5,7 @@ export default function mostrarServico() {
     
     function ajustarAltura() {
         if (window.innerWidth <= 800) { 
-            alturaDisplay = window.innerHeight * 0.4; 
+            alturaDisplay = window.innerHeight * 0.2; 
         } else {
             alturaDisplay = window.innerHeight * 0.6; 
         }
