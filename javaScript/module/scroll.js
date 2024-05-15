@@ -8,7 +8,7 @@ export default function scrollHeader() {
 
   function mostrar() {
     let rect = container.getBoundingClientRect().top;
-    console.log(rect);
+
 
     if (rect == 0 || rect < 0) {
       img.classList.add("mostrar-direita");
@@ -27,8 +27,7 @@ export default function scrollHeader() {
       }, 2000);
     }
   }
-
   mostrar();
 
-  //window.addEventListener("scroll", mostrar)
+
 }

@@ -4,6 +4,7 @@
     display: grid;
     grid-template-columns: 1fr 1fr;
     margin: 0 auto;
+    padding-bottom: 100px;
 }
  
 
@@ -24,6 +25,7 @@
 .conteudo-text h3{
     font-family: poppins;
     font-weight: 400;
+    color: var(--text-dark);
     max-width: 19ch;
     font-size: 4.1rem;
     line-height: 1.1;
@@ -109,6 +111,9 @@
     .conteudo-text h2{
       margin-top: 0;
       font-size: 1.2rem;
+    }
+    .conteudo-text{
+      padding-bottom: 100px;
     }
     
     
