@@ -91,6 +91,7 @@
         position: absolute;
         width: 300px;
         opacity: 0;
+        color: red;
     }
   .card-destinations.on{
     opacity: 1;
