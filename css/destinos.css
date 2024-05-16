@@ -1,0 +1,114 @@
+.container-destinations{
+    max-width: 1200px;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2rem;
+    padding-bottom: 400px;
+}
+.text-destinations{
+    text-align: center;
+}
+.text-destinations p{
+    font-family: poppins;
+    color: var(--text-light);
+    font-size: 1.2rem;
+    text-transform: uppercase;
+}
+.text-destinations h3{
+    font-family: poppins;
+    color: var(--text-dark);
+    font-size: 3.5rem;
+    font-weight: 500;
+    padding-bottom: 40px;
+}
+.flex-destinations{
+    display: flex;
+    justify-content: space-around;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+.img-destinations img{
+    width: 100%;
+    border: none;
+    border-radius: 20px 20px 0 0;
+    outline: none;
+}
+.card-destinations{
+    box-shadow: 5px 5px 15px 0 rgba(44, 44, 44, .15);
+    border-radius: 20px ;
+    padding-bottom: 40px;
+    flex: 1 1 0;
+    max-width: 400px;
+   
+}
+.destino-price{
+    font-family: poppins;
+    color: var(--text-light);
+    font-size: 1.2rem;
+    font-weight: 500;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+
+}
+.days-plane span{
+    font-family: roboto;
+    color: var(--text-light);
+    font-size: 1.1rem;
+    font-weight: 500;
+    padding: 50px;
+
+}
+.days-plane{
+    position: relative;
+    
+}
+.days-plane  .fa-paper-plane{
+    position: absolute;
+    top: 5px;
+    left: 15px;
+    
+    
+}
+
+.botao{
+    display: none;
+}
+@keyframes move-forward-back {
+    0%, 100% {
+        transform: translateX(0);
+    }
+    50% {
+        transform: translateX(4px);
+    }
+}
+
+
+/* javaScript */
+
+@media only screen and (max-width : 800px){
+    .card-destinations{
+        position: absolute;
+        width: 350px;
+        opacity: 0;
+    }
+  .card-destinations.on{
+    opacity: 1;
+    transition: all .5s;
+    }
+    .botao{
+        position: absolute;
+        font-size: 50px;
+        cursor: pointer;
+        background-color: transparent;
+        border: none;
+        display: block;
+        right: 40px;
+        top: 60px;
+        animation: move-forward-back 1s infinite;
+    }
+    .flex-destinations{
+        position: relative;
+    }
+}
+

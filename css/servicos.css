@@ -57,6 +57,7 @@
 .text-item p{
     font-family: roboto;
     line-height: 1.4;
+    font-size: 1.1rem;
     color: var(--text-light);
 }
 
