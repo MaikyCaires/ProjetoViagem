@@ -87,6 +87,25 @@
 
 /* javaScript */
 
+.card-destinations{
+    opacity: 0;
+}
+
+@keyframes mostrar-baixo{
+    from {
+      opacity: 0; 
+      transform: translateY(40px);
+  }
+  to {
+      opacity: 1;
+      transform: translateY(0); 
+  }
+}
+
+.card-destinations.mostrarDestinations{
+    animation: mostrar-baixo .5s forwards;
+}
+
 @media only screen and (max-width : 800px){
     .card-destinations{
         position: absolute;
