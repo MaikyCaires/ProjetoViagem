@@ -1,9 +1,8 @@
 .container-destinations{
     max-width: 1200px;
-    max-width: 1200px;
     margin: 0 auto;
     padding: 2rem;
-    padding-bottom: 400px;
+    padding-bottom: 100px;
 }
 .text-destinations{
     text-align: center;
@@ -107,9 +106,12 @@
 }
 
 @media only screen and (max-width : 800px){
+    .container-destinations{
+        margin-bottom: 450px;
+    }
     .card-destinations{
         position: absolute;
-        width: 300px;
+        width: 350px;
         opacity: 0;
         
     }
@@ -123,8 +125,8 @@
         cursor: pointer;
         background-color: transparent;
         display: block;
-        right: 20px;
-        bottom: -200px;
+        right: 15px;
+        bottom: -250px;
         animation: move-forward-back 1s infinite;
         padding: 10px;
         border-radius: 50%;
