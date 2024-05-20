@@ -16,12 +16,13 @@ export default function scrollDestinos() {
   }
 
   function ajustarLargura() {
-    if (window.innerWidth > 800) {
-      window.addEventListener("scroll", () => {
-        mostrar();
-      });
+    if (window.innerWidth <= 800) {
+      window.removeEventListener("scroll", mostrar)
+      card.forEach(elemento =>{
+        elemento.classList.remove("mostrarDestinations")
+      })
     }
   }
-  ajustarLargura();
   window.addEventListener("resize", ajustarLargura);
+  window.addEventListener("scroll", mostrar)
 }
