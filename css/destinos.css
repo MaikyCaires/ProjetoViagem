@@ -123,7 +123,7 @@
         cursor: pointer;
         background-color: transparent;
         display: block;
-        right: 30px;
+        right: 20px;
         bottom: -200px;
         animation: move-forward-back 1s infinite;
         padding: 10px;
