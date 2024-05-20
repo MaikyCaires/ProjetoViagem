@@ -3,6 +3,7 @@ import menuMobile from "./module/menuMobile.js";
 import scrollServicos from "./module/scrollServicos.js"
 import slide from "./module/slide.js";
 import scrollDestinos from "./module/scrollDestinos.js";
+import scrollFacil from "./module/scrollFacil.js"
 
 
 
@@ -13,3 +14,4 @@ menuMobile()
 scrollServicos()
 slide()
 scrollDestinos()
+scrollFacil()
