@@ -122,11 +122,14 @@
         font-size: 50px;
         cursor: pointer;
         background-color: transparent;
-        border: none;
         display: block;
         right: 40px;
-        top: 60px;
+        bottom: -200px;
         animation: move-forward-back 1s infinite;
+        padding: 10px;
+        border-radius: 50%;
+        border-color: var(--white);
+        color: var(--white);
     }
     .flex-destinations{
         position: relative;
