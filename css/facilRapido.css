@@ -62,3 +62,26 @@
 .li-flex:nth-child(4) span{
     background-color: #005380;
 }
+
+
+@media only screen and (max-width : 800px){
+    .grid-easy{
+        grid-template-columns: 1fr;
+    }
+    .container-img-easy{
+        order:  -1;
+        justify-content: center;
+        align-items: center;
+    }
+    .container-img-easy img{
+        max-width: 100%;
+        margin: 0;
+        margin-bottom: 20px;
+    }
+    .text-easy{
+        text-align: center;
+    }
+    .li-flex p{
+        max-width: 100%;
+    }
+}
