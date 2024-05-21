@@ -4,7 +4,6 @@
     padding: 2rem;
     padding-bottom: 100px;
     align-content: center;
-    row-gap: 0;
 }
 .grid-easy{
     display: grid;

@@ -1,0 +1,96 @@
+.container-depoimentos{
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2rem 16px;
+    padding-bottom: 100px;
+    align-content: center;
+    padding-bottom: 150px;
+}
+.grid-depoimentos{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+.text-titulo-depoimentos h3{
+    font-family: poppins;
+    color: var(--text-dark);
+    font-size: 3rem;
+    font-weight: 500;
+    padding-bottom: 40px;
+    line-height: 1.2;
+}
+.text-titulo-depoimentos p{
+    font-family: poppins;
+    color: var(--text-light);
+    font-size: 1.2rem;
+    text-transform: uppercase;
+}
+/*card */
+.card-depoimento{
+    position: relative;
+    width: 500px;
+    margin-left: 40px;
+}
+.img-depoimento{
+    position: absolute;
+    width: 80px;
+    border-radius: 50%;
+    top: -20px;
+    left: -40px;
+}
+.text-depoimentos{
+    padding: 30px 50px;
+    box-shadow: 5px 5px 15px 0 rgba(44, 44, 44, .15);
+    border-radius: 20px;
+}
+.text-depoimentos p{
+    font-family: roboto;
+    margin-bottom: 40px;
+    color: var(--text-light);
+    font-size: 1.1rem;
+}
+.text-depoimentos h3{
+    font-family: poppins;
+    font-weight: 600;
+    margin-bottom: 5px;
+    font-size: 1.2rem;
+}
+.text-depoimentos h4{
+    font-family: roboto;
+    color: var(--text-light);
+    font-size: 1.1rem;
+    font-weight: 400;
+}
+.container-slide{
+    display: flex;
+    flex-direction: column;
+    row-gap: 40px;
+    height: 300px;
+    overflow-y: auto;
+    padding-block: 40px;
+    /* Remover barra de rolagem no Chrome, Safari e Opera */
+    scrollbar-width: none; /* Para Firefox */
+    -ms-overflow-style: none;  /* Para Internet Explorer e Edge */
+}
+
+
+@media only screen and (max-width : 800px){
+    .grid-depoimentos{
+        grid-template-columns: 1fr;
+        width: 100%;
+    }
+    .card-depoimento{
+        width: 300px;
+        margin-left: 20px;
+    }
+    .container-slide{
+        height: 370px;
+        width: 100%;
+        align-items: center;
+        row-gap: 50px;
+        
+    }
+    .text-titulo-depoimentos{
+        text-align: center;
+    }
+    
+}
