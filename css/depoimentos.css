@@ -66,11 +66,34 @@
     height: 280px;
     overflow-y: auto;
     padding-block: 40px;
-    /* Remover barra de rolagem no Chrome, Safari e Opera */
-    scrollbar-width: none; /* Para Firefox */
-    -ms-overflow-style: none;  /* Para Internet Explorer e Edge */
+    
+    scrollbar-width: none; 
+    -ms-overflow-style: none;
 }
 
+.text-titulo-depoimentos p{
+    opacity: 0;
+}
+.text-titulo-depoimentos h3{
+    opacity: 0;
+}
+.text-titulo-depoimentos p.mostrarDepoimento{
+    animation: depoimento-baixo .5s forwards;
+    opacity: 1;
+}
+.text-titulo-depoimentos h3.mostrarDepoimento{
+    animation: depoimento-baixo .5s forwards;
+    opacity: 1;
+}
+@keyframes depoimento-baixo{
+    from{
+        opacity: 0;
+        transform: translateY(40px);
+    }to{
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
 
 @media only screen and (max-width : 800px){
     .grid-depoimentos{
