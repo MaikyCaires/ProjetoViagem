@@ -4,7 +4,6 @@ import scrollServicos from "./module/scrollServicos.js"
 import slide from "./module/slide.js";
 import scrollDestinos from "./module/scrollDestinos.js";
 import scrollFacil from "./module/scrollFacil.js"
-import scrollTextDepoimentos from "./module/scrollTextDepoimentos.js"
 import scrollDepoimento from "./module/scrollDepoimento.js"
 
 
