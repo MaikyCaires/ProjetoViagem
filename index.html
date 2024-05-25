@@ -234,7 +234,7 @@
                                 <h3>Empresa</h3>
                             
                             <a href="#">
-                                <p>sobre</p>
+                                <p>Sobre</p>
                             </a>
                             <a href="#">
                                 <p>Carreiras</p>
@@ -286,17 +286,35 @@
     <div class="container-modal" data-container="modal">
         <div class="modal">
             <!-- <button class="btn-sair">X</button> -->
-            <div class="login">
+            <div class="login" data-container="login">
                 <div class="text-form">
                     <h3>Login</h3>
                     <p>Digite os seus dados de acesso</p>
                 </div> 
                 <form class="formulario">
                     <label for="email">Email</label>
-                    <input type="text" id="email" required>
+                    <input type="text" id="email-login" >
                     <label for="senha">Senha</label>
-                    <input type="password" id="senha" required>
-                    <button class="criar">Criar conta</button>
+                    <input type="password" id="senha-login" >
+                    <button class="criar" data-btn="criar">Criar conta</button>
+                    <div class="btn-container">
+                        <button class="btn-form">Entrar</button>
+                    </div> 
+                </form>
+            </div>
+            <div class="registro" data-container="registro">
+                <div class="text-form">
+                    <h3>Registro</h3>
+                    <p>Registre seus dados</p>
+                </div> 
+                <form class="formulario">
+                    <label for="nome">Nome:</label>
+                    <input type="text"  id="nome">
+                    <label for="email">Email</label>
+                    <input type="text" id="email-registro" >
+                    <label for="senha">Senha</label>
+                    <input type="password" id="senha">
+                    <button class="criar" data-btn="login-registro">Fazer login</button>
                     <div class="btn-container">
                         <button class="btn-form">Criar conta</button>
                     </div> 

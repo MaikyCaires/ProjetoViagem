@@ -75,6 +75,7 @@
     cursor: pointer;
     color: var(--text-dark);
 }
+
 .criar:hover{
     color: var(--primary-color);
 }
@@ -83,6 +84,16 @@
 .container-modal.mostrarForm{
     display: flex;
     animation: show-modal .5s forwards;
+}
+.registro{
+    display: none;
+}
+.mostrarRegistro{
+    display: block;
+    animation: show-modal-esquerda 1s forwards;
+}
+.sumir{
+    display: none;
 }
 
 @keyframes show-modal{
@@ -93,5 +104,30 @@
     to {
         opacity: 1;
         transform: translateY(0); 
+    }
+}
+
+@keyframes show-modal-esquerda{
+    from {
+        opacity: 0; 
+        transform: translateX(-40px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0); 
+    }
+}
+
+/* mobile */
+@media only screen and (max-width : 800px){
+    .modal{
+        padding: 60px 50px;
+    }
+    .formulario label{
+        padding-bottom: 7px;
+        padding-top: 7px;
+    }
+    .formulario input{
+        width: 230px;
     }
 }
