@@ -5,6 +5,7 @@ import slide from "./module/slide.js";
 import scrollDestinos from "./module/scrollDestinos.js";
 import scrollFacil from "./module/scrollFacil.js"
 import scrollDepoimento from "./module/scrollDepoimento.js"
+import mostrarModal from "./module/modal.js";
 
 
 
@@ -19,3 +20,4 @@ slide()
 scrollDestinos()
 scrollFacil()
 scrollDepoimento()
+mostrarModal()

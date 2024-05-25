@@ -18,7 +18,7 @@
             </div>
             <nav>
                 <ul class="main-menu" data-menu="main">
-                    <li><a href="#">Login</a></li>
+                    <li><a data-btn="login" href="#">Login</a></li>
                     <li><a href="#">Serviços</a></li>
                     <li><a href="#">Destinos</a></li>
                     <li><a href="#">Viagens</a></li>
@@ -282,6 +282,27 @@
                     <p>Caires &copy; 2024</p>
                 </div>
         </footer>
+    </div>
+    <div class="container-modal" data-container="modal">
+        <div class="modal">
+            <!-- <button class="btn-sair">X</button> -->
+            <div class="login">
+                <div class="text-form">
+                    <h3>Login</h3>
+                    <p>Digite os seus dados de acesso</p>
+                </div> 
+                <form class="formulario">
+                    <label for="email">Email</label>
+                    <input type="text" id="email" required>
+                    <label for="senha">Senha</label>
+                    <input type="password" id="senha" required>
+                    <button class="criar">Criar conta</button>
+                    <div class="btn-container">
+                        <button class="btn-form">Criar conta</button>
+                    </div> 
+                </form>
+            </div>
+        </div>
     </div>
 </body>
 <script type="module" src="javaScript/script.js"></script>
