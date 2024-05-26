@@ -1,120 +1,114 @@
-.intro-main{
-    max-width: 1200px;
-    padding: 3rem 2rem;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    margin: 0 auto;
-    padding-bottom: 100px;
-}
- 
-
-.img-intro{
-    justify-self: center;
-    max-width: 100%;
+.intro-main {
+  max-width: 1200px;
+  padding: 3rem 2rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin: 0 auto;
+  padding-bottom: 100px;
 }
 
-
-.conteudo-text h2{
-    font-family: roboto;
-    color: var(--primary-color);
-    margin-bottom: 20px;
-    padding-top: 40px;
-    letter-spacing: 2px;
-    text-transform: uppercase;
-}
-.conteudo-text h3{
-    font-family: poppins;
-    font-weight: 400;
-    color: var(--text-dark);
-    max-width: 19ch;
-    font-size: 4.1rem;
-    line-height: 1.1;
+.img-intro {
+  justify-self: center;
+  max-width: 100%;
 }
 
-.conteudo-text p{
-    font-family: roboto;
-    color: var(--text-light);
-    margin-top: 20px;
-    font-size: 1.1rem;
-    line-height: 2;
-    margin-bottom: 50px;
-    
+.conteudo-text h2 {
+  font-family: roboto;
+  color: var(--primary-color);
+  margin-bottom: 20px;
+  padding-top: 40px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
 }
-.conteudo-text span{
-    background-color: var(--primary-color);
-    padding: 20px 40px;
-    border-radius: 5px;
-    cursor: pointer;
-    color: var(--white);
-    font-size: 1.2rem;
-    box-shadow: 5px 5px 15px 0 rgb(44, 44, 44, .15);
-    
+.conteudo-text h3 {
+  font-family: poppins;
+  font-weight: 400;
+  color: var(--text-dark);
+  max-width: 19ch;
+  font-size: 4.1rem;
+  line-height: 1.1;
+}
+
+.conteudo-text p {
+  font-family: roboto;
+  color: var(--text-light);
+  margin-top: 20px;
+  font-size: 1.1rem;
+  line-height: 2;
+  margin-bottom: 50px;
+}
+.conteudo-text span {
+  background-color: var(--primary-color);
+  padding: 20px 40px;
+  border-radius: 5px;
+  cursor: pointer;
+  color: var(--white);
+  font-size: 1.2rem;
+  box-shadow: 5px 5px 15px 0 rgb(44, 44, 44, 0.15);
 }
 
 /* animação scroll */
 
-[data-conteudo]{
-    opacity: 0;
-    transform: translate3d( 0, 0, 0);
-    transition: .3s;
-  }
+[data-conteudo] {
+  opacity: 0;
+  transform: translate3d(0, 0, 0);
+  transition: 0.3s;
+}
 
-[data-conteudo="img"]{
+[data-conteudo="img"] {
   opacity: 0;
   transform: translate3d(-40px, 0, 0);
 }
-  
-.mostrar-direita{
-    animation: mostrar-direita .7s ease-in forwards;
+
+.mostrar-direita {
+  animation: mostrar-direita 0.7s ease-in forwards;
 }
-.mostrar-baixo{
-    animation: mostrar-baixo .5s ease-in forwards;
+.mostrar-baixo {
+  animation: mostrar-baixo 0.5s ease-in forwards;
 }
 
-@keyframes mostrar-direita{
-    from{
-      opacity: 0;
-      transform: matrix3d( -10px, 0, 0);
-    }
-    to{
-      opacity: 1;
-      transform: translate3d( 0, 0, 0);
-    }
-  }
-
-  @keyframes mostrar-baixo{
-    from {
-      opacity: 0; 
-      transform: translateY(40px);
+@keyframes mostrar-direita {
+  from {
+    opacity: 0;
+    transform: matrix3d(-10px, 0, 0);
   }
   to {
-      opacity: 1;
-      transform: translateY(0); 
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
   }
-  }
+}
 
-  /* mobile*/
-  @media only screen and (max-width : 800px){
-    .intro-main{
-      grid-template-columns: 1fr;
-      text-align: center;
-      justify-content: center;
-      justify-items: center;
-      align-items: center;
-      margin: 0 auto;
-      padding: 1rem 1.5rem;
-    }
-    .img-intro{
-      order: -1;
-      max-width: 110%;
-    }
-    .conteudo-text h2{
-      margin-top: 0;
-      font-size: 1.2rem;
-    }
-    .conteudo-text{
-      padding-bottom: 100px;
-    }
-    
-    
+@keyframes mostrar-baixo {
+  from {
+    opacity: 0;
+    transform: translateY(40px);
   }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* mobile*/
+@media only screen and (max-width: 800px) {
+  .intro-main {
+    grid-template-columns: 1fr;
+    text-align: center;
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
+    margin: 0 auto;
+    padding: 1rem 1.5rem;
+  }
+  .img-intro {
+    order: -1;
+    max-width: 110%;
+  }
+  .conteudo-text h2 {
+    margin-top: 0;
+    font-size: 1.2rem;
+  }
+  .conteudo-text {
+    padding-bottom: 100px;
+  }
+}
